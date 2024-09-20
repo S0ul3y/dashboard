@@ -1,0 +1,46 @@
+<div class="sidebar">
+    <div class="header">
+        <img src="assets/images/logo.png" alt="logo">
+        <h2>Taama</h2>
+    </div>
+
+    <div class="btnBloc">
+        
+        <div class="btn" [routerLink]="['/dashboard']" [ngClass]="{active: activeRoute ==='/dashboard'}">
+            <i class="fa-solid fa-border-all"></i> 
+            <span class="texte">Dashboard</span>
+        </div>
+
+        <div class="btn" [routerLink]="['/utilisateurs']" [ngClass]="{active: activeRoute ==='/utilisateurs'}">
+            <i class="fa-solid fa-user"></i>
+            <span class="texte">Utilisateur</span>
+        </div>
+
+        <div class="btn" [routerLink]="['/agence']" [ngClass]="{active: activeRoute ==='/agence'}" (click)="Affiche()">
+            <i class="fa-solid fa-building"></i> 
+            <span class="texte">Agence</span>
+            <!-- <i class="fa-solid fa-angle-down" id="down"></i> -->
+        </div>
+        <div class="btn" [routerLink]="['/sous_agence']" [ngClass]="{active: activeRoute ==='/sous_agence'}">
+            <i class="fa-solid fa-building"></i> 
+            <span class="texte">Sous-Agence</span>
+        </div>
+
+        <div class="btn" [routerLink]="['/voyage']" [ngClass]="{active: activeRoute ==='/voyage'}">
+            <i class="fa-solid fa-bus-simple"></i>
+            <span class="texte">Voyage</span>
+        </div>
+
+        <div class="btn" [routerLink]="['/reservation']" [ngClass]="{active: activeRoute ==='/reservation'}">
+            <i class="fa-solid fa-ticket-simple"></i>
+            <span class="texte">Réservation</span>
+        </div>
+    </div>
+    
+        <div class="deconnexion">
+            <i class="fa-solid fa-right-from-bracket"></i> 
+            <span class="texte">Déconnexion</span>
+        </div>
+    
+
+</div>
